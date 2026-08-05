@@ -3,31 +3,69 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Place on any empty GameObject in the scene (e.g. "RaceManager").
-/// Drag all four Racer GameObjects into the Racers list in the Inspector.
-/// Optionally assign a UI Text for the countdown display.
+/// Manages the race itself — countdown, start, finish.
+/// BeginRace() is called by GameManager after character select.
 /// </summary>
 public class RaceManager : MonoBehaviour
 {
-    [Header("Racers — drag all 4 characters here")]
+    public static RaceManager Instance { get; private set; }
+
+    [Header("All 4 racers — same order as GameManager: 0=Purple 1=Pink 2=Yellow 3=Green")]
     public Racer[] racers;
 
-    [Header("Countdown")]
-    public float countdownTime = 3f;
+    [Header("Starting positions for each racer")]
+    public Transform[] startPositions;
 
-    [Header("UI (optional)")]
-    [Tooltip("Assign a UI Text object to show 3-2-1-GO!")]
+    [Header("Countdown UI")]
     public Text countdownText;
 
-    // ─────────────────────────────────────────────────────────────────────────
-    private void Start()
+    [Header("Countdown duration")]
+    public float countdownTime = 3f;
+
+    private bool raceFinished = false;
+
+    // ── Singleton ─────────────────────────────────────────────────────────────
+    private void Awake()
     {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+    }
+
+    // ── Called by GameManager after player picks character ────────────────────
+
+    /// <summary>
+    /// playerIndex = which racer the human controls (0-3).
+    /// All others become AI.
+    /// </summary>
+    public void BeginRace(int playerIndex)
+    {
+        raceFinished = false;
+
+        // Reset positions
+        for (int i = 0; i < racers.Length; i++)
+        {
+            if (startPositions != null && i < startPositions.Length)
+                racers[i].transform.position = startPositions[i].position;
+
+            racers[i].SetAsPlayer(i == playerIndex);
+        }
+
         StartCoroutine(CountdownRoutine());
     }
 
+    public void ResetRace()
+    {
+        StopAllCoroutines();
+        raceFinished = false;
+
+        foreach (var r in racers)
+            r.StopRacing();
+    }
+
+    // ── Countdown ─────────────────────────────────────────────────────────────
+
     private IEnumerator CountdownRoutine()
     {
-        // Count down 3 - 2 - 1
         for (int i = (int)countdownTime; i > 0; i--)
         {
             ShowText(i.ToString());
@@ -38,17 +76,14 @@ public class RaceManager : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         HideText();
 
-        // Tell every racer to start
         foreach (var r in racers)
-        {
-            if (r != null) r.StartRacing();
-        }
+            r.StartRacing();
     }
 
     private void ShowText(string msg)
     {
         if (countdownText == null) return;
-        countdownText.text    = msg;
+        countdownText.text = msg;
         countdownText.enabled = true;
     }
 
@@ -58,21 +93,18 @@ public class RaceManager : MonoBehaviour
         countdownText.enabled = false;
     }
 
-    /// <summary>
-    /// Called by FinishLine when the first racer crosses.
-    /// You can expand this to show a win screen etc.
-    /// </summary>
+    // ── Finish line calls this ────────────────────────────────────────────────
+
     public void OnRacerFinished(Racer winner)
     {
-        Debug.Log($"{winner.gameObject.name} wins the race!");
+        if (raceFinished) return;
+        raceFinished = true;
 
-        // Stop everyone
+        // Stop all racers
         foreach (var r in racers)
-        {
-            if (r != null) r.StopRacing();
-        }
+            r.StopRacing();
 
-        // Update UI if you have a win text — hook it up here later
-        ShowText($"{winner.gameObject.name} Wins!");
+        // Show results
+        GameManager.Instance.ShowResults(winner.gameObject.name);
     }
 }
