@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 3631520}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 9527706}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 41815307}
   m_Layer: 0
   m_Name: floor (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 43904925}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 44704698}
   m_Layer: 0
   m_Name: floor (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 65580412}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 66661629}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 98805598}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 104455692}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 121793594}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 129217033}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 131375077}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 144468736}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1546,7 +1546,7 @@ GameObject:
   - component: {fileID: 150335410}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1673,7 +1673,7 @@ GameObject:
   - component: {fileID: 155323915}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 169265305}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1847,7 +1847,7 @@ GameObject:
   - component: {fileID: 170000057}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1934,7 +1934,7 @@ GameObject:
   - component: {fileID: 170749226}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2021,7 +2021,7 @@ GameObject:
   - component: {fileID: 175596546}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 176179224}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 188208530}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2282,7 +2282,7 @@ GameObject:
   - component: {fileID: 194858593}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 199093699}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2589,7 +2589,7 @@ GameObject:
   - component: {fileID: 216241092}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 223950508}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2769,7 +2769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &224299178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2868,7 +2868,7 @@ GameObject:
   - component: {fileID: 226572941}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2955,7 +2955,7 @@ GameObject:
   - component: {fileID: 227944613}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3179,7 +3179,7 @@ GameObject:
   - component: {fileID: 237797356}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 260882538}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3353,7 +3353,7 @@ GameObject:
   - component: {fileID: 263852439}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3576,7 +3576,7 @@ GameObject:
   - component: {fileID: 273808774}
   m_Layer: 0
   m_Name: floor (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 280038828}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3707,7 +3707,7 @@ GameObject:
   - component: {fileID: 280066141}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3794,7 +3794,7 @@ GameObject:
   - component: {fileID: 280312878}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3881,7 +3881,7 @@ GameObject:
   - component: {fileID: 292621614}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3967,7 +3967,7 @@ GameObject:
   - component: {fileID: 326861744}
   m_Layer: 0
   m_Name: floor (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4011,6 +4011,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4136,6 +4137,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226d54119d075814393f8f781ecbb453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  offset: {x: 0, y: 2, z: -10}
+  smoothSpeed: 0.1
 --- !u!1 &342708697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,7 +4164,7 @@ GameObject:
   - component: {fileID: 342708699}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4235,7 +4251,7 @@ GameObject:
   - component: {fileID: 357482669}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4322,7 +4338,7 @@ GameObject:
   - component: {fileID: 358351471}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4409,7 +4425,7 @@ GameObject:
   - component: {fileID: 362231664}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4496,7 +4512,7 @@ GameObject:
   - component: {fileID: 369087823}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4744,7 +4760,7 @@ GameObject:
   - component: {fileID: 425247097}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4831,7 +4847,7 @@ GameObject:
   - component: {fileID: 430473148}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4918,7 +4934,7 @@ GameObject:
   - component: {fileID: 436611819}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5005,7 +5021,7 @@ GameObject:
   - component: {fileID: 436855010}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5092,7 +5108,7 @@ GameObject:
   - component: {fileID: 453918358}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5179,7 +5195,7 @@ GameObject:
   - component: {fileID: 455043590}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5266,7 +5282,7 @@ GameObject:
   - component: {fileID: 455342301}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5353,7 +5369,7 @@ GameObject:
   - component: {fileID: 461909907}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5577,7 +5593,7 @@ GameObject:
   - component: {fileID: 484323791}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5663,7 +5679,7 @@ GameObject:
   - component: {fileID: 491412554}
   m_Layer: 0
   m_Name: floor (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5707,7 +5723,7 @@ GameObject:
   - component: {fileID: 491738684}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5794,7 +5810,7 @@ GameObject:
   - component: {fileID: 497693677}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5881,7 +5897,7 @@ GameObject:
   - component: {fileID: 500224044}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5968,7 +5984,7 @@ GameObject:
   - component: {fileID: 503043423}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6055,7 +6071,7 @@ GameObject:
   - component: {fileID: 506971206}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6142,7 +6158,7 @@ GameObject:
   - component: {fileID: 509144923}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6229,7 +6245,7 @@ GameObject:
   - component: {fileID: 511262994}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6316,7 +6332,7 @@ GameObject:
   - component: {fileID: 516513296}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6403,7 +6419,7 @@ GameObject:
   - component: {fileID: 517975814}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6490,7 +6506,7 @@ GameObject:
   - component: {fileID: 519397679}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6577,7 +6593,7 @@ GameObject:
   - component: {fileID: 520491686}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6664,7 +6680,7 @@ GameObject:
   - component: {fileID: 521400657}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6751,7 +6767,7 @@ GameObject:
   - component: {fileID: 551147669}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6838,7 +6854,7 @@ GameObject:
   - component: {fileID: 557233715}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7012,7 +7028,7 @@ GameObject:
   - component: {fileID: 578179741}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7099,7 +7115,7 @@ GameObject:
   - component: {fileID: 591318193}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7186,7 +7202,7 @@ GameObject:
   - component: {fileID: 603537892}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7410,7 +7426,7 @@ GameObject:
   - component: {fileID: 618263471}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7497,7 +7513,7 @@ GameObject:
   - component: {fileID: 619137076}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7584,7 +7600,7 @@ GameObject:
   - component: {fileID: 619158182}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7839,7 +7855,7 @@ GameObject:
   - component: {fileID: 624523200}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8082,7 +8098,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.15, y: 1.26}
+  m_Size: {x: 0.96, y: 0.82}
   m_Direction: 0
 --- !u!50 &637322362
 Rigidbody2D:
@@ -8123,7 +8139,7 @@ GameObject:
   - component: {fileID: 638303750}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8210,7 +8226,7 @@ GameObject:
   - component: {fileID: 646307403}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8430,7 +8446,7 @@ GameObject:
   - component: {fileID: 671328966}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8517,7 +8533,7 @@ GameObject:
   - component: {fileID: 673984980}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8604,7 +8620,7 @@ GameObject:
   - component: {fileID: 678031540}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8828,7 +8844,7 @@ GameObject:
   - component: {fileID: 700843654}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8915,7 +8931,7 @@ GameObject:
   - component: {fileID: 707718974}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9002,7 +9018,7 @@ GameObject:
   - component: {fileID: 720459296}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9089,7 +9105,7 @@ GameObject:
   - component: {fileID: 727583661}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9176,7 +9192,7 @@ GameObject:
   - component: {fileID: 733775862}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9350,7 +9366,7 @@ GameObject:
   - component: {fileID: 741522440}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9437,7 +9453,7 @@ GameObject:
   - component: {fileID: 746145515}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9524,7 +9540,7 @@ GameObject:
   - component: {fileID: 753414002}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9611,7 +9627,7 @@ GameObject:
   - component: {fileID: 755681162}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9698,7 +9714,7 @@ GameObject:
   - component: {fileID: 763598901}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9785,7 +9801,7 @@ GameObject:
   - component: {fileID: 770736707}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10092,7 +10108,7 @@ GameObject:
   - component: {fileID: 784017157}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10179,7 +10195,7 @@ GameObject:
   - component: {fileID: 786889419}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10266,7 +10282,7 @@ GameObject:
   - component: {fileID: 789374021}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10353,7 +10369,7 @@ GameObject:
   - component: {fileID: 800525510}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10440,7 +10456,7 @@ GameObject:
   - component: {fileID: 803813973}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10527,7 +10543,7 @@ GameObject:
   - component: {fileID: 805744590}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10751,7 +10767,7 @@ GameObject:
   - component: {fileID: 807759337}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10838,7 +10854,7 @@ GameObject:
   - component: {fileID: 814678538}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11190,7 +11206,7 @@ GameObject:
   - component: {fileID: 849540266}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11277,7 +11293,7 @@ GameObject:
   - component: {fileID: 853318979}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11364,7 +11380,7 @@ GameObject:
   - component: {fileID: 874304179}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11451,7 +11467,7 @@ GameObject:
   - component: {fileID: 877945001}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11538,7 +11554,7 @@ GameObject:
   - component: {fileID: 892091848}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11625,7 +11641,7 @@ GameObject:
   - component: {fileID: 903925373}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11711,7 +11727,7 @@ GameObject:
   - component: {fileID: 909294146}
   m_Layer: 0
   m_Name: floor (16)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11889,7 +11905,7 @@ GameObject:
   - component: {fileID: 923462602}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11975,7 +11991,7 @@ GameObject:
   - component: {fileID: 945005755}
   m_Layer: 0
   m_Name: floor (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12178,7 +12194,7 @@ GameObject:
   - component: {fileID: 957129618}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12265,7 +12281,7 @@ GameObject:
   - component: {fileID: 974423618}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12351,7 +12367,7 @@ GameObject:
   - component: {fileID: 981674336}
   m_Layer: 0
   m_Name: floor (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12395,7 +12411,7 @@ GameObject:
   - component: {fileID: 993772275}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12656,7 +12672,7 @@ GameObject:
   - component: {fileID: 1011978536}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12743,7 +12759,7 @@ GameObject:
   - component: {fileID: 1030941704}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13091,7 +13107,7 @@ GameObject:
   - component: {fileID: 1051338253}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13178,7 +13194,7 @@ GameObject:
   - component: {fileID: 1063762890}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13265,7 +13281,7 @@ GameObject:
   - component: {fileID: 1071255795}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13352,7 +13368,7 @@ GameObject:
   - component: {fileID: 1080683199}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13439,7 +13455,7 @@ GameObject:
   - component: {fileID: 1091479163}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13526,7 +13542,7 @@ GameObject:
   - component: {fileID: 1111052645}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13613,7 +13629,7 @@ GameObject:
   - component: {fileID: 1116040806}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13700,7 +13716,7 @@ GameObject:
   - component: {fileID: 1119488772}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13787,7 +13803,7 @@ GameObject:
   - component: {fileID: 1120481867}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13874,7 +13890,7 @@ GameObject:
   - component: {fileID: 1121788526}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13961,7 +13977,7 @@ GameObject:
   - component: {fileID: 1137315596}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14048,7 +14064,7 @@ GameObject:
   - component: {fileID: 1144231551}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14135,7 +14151,7 @@ GameObject:
   - component: {fileID: 1148630243}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14222,7 +14238,7 @@ GameObject:
   - component: {fileID: 1158538901}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14309,7 +14325,7 @@ GameObject:
   - component: {fileID: 1177198162}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14396,7 +14412,7 @@ GameObject:
   - component: {fileID: 1178415654}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14483,7 +14499,7 @@ GameObject:
   - component: {fileID: 1179773765}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14570,7 +14586,7 @@ GameObject:
   - component: {fileID: 1185952552}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14657,7 +14673,7 @@ GameObject:
   - component: {fileID: 1204612222}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14744,7 +14760,7 @@ GameObject:
   - component: {fileID: 1204825327}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15188,7 +15204,7 @@ GameObject:
   - component: {fileID: 1225930024}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15275,7 +15291,7 @@ GameObject:
   - component: {fileID: 1231355556}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15731,7 +15747,7 @@ GameObject:
   - component: {fileID: 1283025690}
   m_Layer: 0
   m_Name: floor (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15775,7 +15791,7 @@ GameObject:
   - component: {fileID: 1288412436}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15862,7 +15878,7 @@ GameObject:
   - component: {fileID: 1299774239}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15949,7 +15965,7 @@ GameObject:
   - component: {fileID: 1302928479}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16123,7 +16139,7 @@ GameObject:
   - component: {fileID: 1336645554}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16210,7 +16226,7 @@ GameObject:
   - component: {fileID: 1341859455}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16297,7 +16313,7 @@ GameObject:
   - component: {fileID: 1362300755}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16471,7 +16487,7 @@ GameObject:
   - component: {fileID: 1392744970}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16558,7 +16574,7 @@ GameObject:
   - component: {fileID: 1409921484}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16645,7 +16661,7 @@ GameObject:
   - component: {fileID: 1430983803}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16732,7 +16748,7 @@ GameObject:
   - component: {fileID: 1433282777}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16819,7 +16835,7 @@ GameObject:
   - component: {fileID: 1437069281}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16906,7 +16922,7 @@ GameObject:
   - component: {fileID: 1439183002}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16993,7 +17009,7 @@ GameObject:
   - component: {fileID: 1458613539}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17080,7 +17096,7 @@ GameObject:
   - component: {fileID: 1458631271}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17167,7 +17183,7 @@ GameObject:
   - component: {fileID: 1463795319}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17341,7 +17357,7 @@ GameObject:
   - component: {fileID: 1466569544}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17515,7 +17531,7 @@ GameObject:
   - component: {fileID: 1489162340}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17602,7 +17618,7 @@ GameObject:
   - component: {fileID: 1495414098}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17689,7 +17705,7 @@ GameObject:
   - component: {fileID: 1498546527}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17776,7 +17792,7 @@ GameObject:
   - component: {fileID: 1500956307}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17863,7 +17879,7 @@ GameObject:
   - component: {fileID: 1514464164}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18037,7 +18053,7 @@ GameObject:
   - component: {fileID: 1524492353}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18124,7 +18140,7 @@ GameObject:
   - component: {fileID: 1528062720}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18344,7 +18360,7 @@ GameObject:
   - component: {fileID: 1561494776}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18430,7 +18446,7 @@ GameObject:
   - component: {fileID: 1568670416}
   m_Layer: 0
   m_Name: floor (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18474,7 +18490,7 @@ GameObject:
   - component: {fileID: 1580269821}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18561,7 +18577,7 @@ GameObject:
   - component: {fileID: 1581501358}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18648,7 +18664,7 @@ GameObject:
   - component: {fileID: 1590772344}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18735,7 +18751,7 @@ GameObject:
   - component: {fileID: 1611565585}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18822,7 +18838,7 @@ GameObject:
   - component: {fileID: 1618229554}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18909,7 +18925,7 @@ GameObject:
   - component: {fileID: 1623001193}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19302,7 +19318,7 @@ GameObject:
   - component: {fileID: 1666378684}
   m_Layer: 0
   m_Name: floor (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19502,7 +19518,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.15, y: 1.26}
+  m_Size: {x: 0.96, y: 0.82}
   m_Direction: 0
 --- !u!50 &1672846499
 Rigidbody2D:
@@ -19543,7 +19559,7 @@ GameObject:
   - component: {fileID: 1677608057}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19630,7 +19646,7 @@ GameObject:
   - component: {fileID: 1688036985}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19717,7 +19733,7 @@ GameObject:
   - component: {fileID: 1690298281}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19891,7 +19907,7 @@ GameObject:
   - component: {fileID: 1709971852}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19978,7 +19994,7 @@ GameObject:
   - component: {fileID: 1710740673}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20065,7 +20081,7 @@ GameObject:
   - component: {fileID: 1714354554}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20152,7 +20168,7 @@ GameObject:
   - component: {fileID: 1718088403}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20485,7 +20501,7 @@ GameObject:
   - component: {fileID: 1735783824}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20572,7 +20588,7 @@ GameObject:
   - component: {fileID: 1739460902}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20659,7 +20675,7 @@ GameObject:
   - component: {fileID: 1739509547}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20745,7 +20761,7 @@ GameObject:
   - component: {fileID: 1749716689}
   m_Layer: 0
   m_Name: floor (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20832,7 +20848,7 @@ GameObject:
   - component: {fileID: 1757639961}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21056,7 +21072,7 @@ GameObject:
   - component: {fileID: 1779324654}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21143,7 +21159,7 @@ GameObject:
   - component: {fileID: 1790549281}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21230,7 +21246,7 @@ GameObject:
   - component: {fileID: 1795315684}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21317,7 +21333,7 @@ GameObject:
   - component: {fileID: 1798998867}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21404,7 +21420,7 @@ GameObject:
   - component: {fileID: 1799329358}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21492,6 +21508,7 @@ GameObject:
   - component: {fileID: 1819081898}
   - component: {fileID: 1819081897}
   - component: {fileID: 1819081896}
+  - component: {fileID: 1819081900}
   m_Layer: 0
   m_Name: floo
   m_TagString: Untagged
@@ -21681,6 +21698,52 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!61 &1819081900
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819081894}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -292.34, y: -3.14}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 629, y: 4.25}
+  m_EdgeRadius: 0
 --- !u!1 &1832198091
 GameObject:
   m_ObjectHideFlags: 0
@@ -21693,7 +21756,7 @@ GameObject:
   - component: {fileID: 1832198093}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21780,7 +21843,7 @@ GameObject:
   - component: {fileID: 1852958809}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21867,7 +21930,7 @@ GameObject:
   - component: {fileID: 1857165883}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21954,7 +22017,7 @@ GameObject:
   - component: {fileID: 1869328727}
   m_Layer: 0
   m_Name: bricks_brown_0
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22197,7 +22260,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.15, y: 1.26}
+  m_Size: {x: 0.96, y: 0.82}
   m_Direction: 0
 --- !u!50 &1870379864
 Rigidbody2D:
@@ -22317,7 +22380,7 @@ GameObject:
   - component: {fileID: 1882584931}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22403,7 +22466,7 @@ GameObject:
   - component: {fileID: 1890655165}
   m_Layer: 0
   m_Name: floor (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22574,7 +22637,7 @@ GameObject:
   - component: {fileID: 1899786298}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22661,7 +22724,7 @@ GameObject:
   - component: {fileID: 1913909393}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22747,7 +22810,7 @@ GameObject:
   - component: {fileID: 1920366267}
   m_Layer: 0
   m_Name: floor (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22791,7 +22854,7 @@ GameObject:
   - component: {fileID: 1933070063}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22901,7 +22964,7 @@ MonoBehaviour:
   - {fileID: 2031447133}
   - {fileID: 1672846497}
   startPositions: []
-  countdownText: {fileID: 0}
+  countdownText: {fileID: 684988503}
   countdownTime: 3
 --- !u!4 &1935016451
 Transform:
@@ -22930,7 +22993,7 @@ GameObject:
   - component: {fileID: 1940416791}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23154,7 +23217,7 @@ GameObject:
   - component: {fileID: 1956796804}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23241,7 +23304,7 @@ GameObject:
   - component: {fileID: 1959545745}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23367,7 +23430,7 @@ GameObject:
   - component: {fileID: 1971183513}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23541,7 +23604,7 @@ GameObject:
   - component: {fileID: 1975001236}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23628,7 +23691,7 @@ GameObject:
   - component: {fileID: 1975820935}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23715,7 +23778,7 @@ GameObject:
   - component: {fileID: 1993991354}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23802,7 +23865,7 @@ GameObject:
   - component: {fileID: 1995840914}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23889,7 +23952,7 @@ GameObject:
   - component: {fileID: 2030870027}
   m_Layer: 0
   m_Name: bricks_brown_0 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24132,7 +24195,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.15, y: 1.26}
+  m_Size: {x: 0.96, y: 0.82}
   m_Direction: 0
 --- !u!50 &2031447135
 Rigidbody2D:
@@ -24173,7 +24236,7 @@ GameObject:
   - component: {fileID: 2044177128}
   m_Layer: 0
   m_Name: bricks_brown_0 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24260,7 +24323,7 @@ GameObject:
   - component: {fileID: 2062619118}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24347,7 +24410,7 @@ GameObject:
   - component: {fileID: 2062985151}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24434,7 +24497,7 @@ GameObject:
   - component: {fileID: 2072763311}
   m_Layer: 0
   m_Name: bricks_brown_0 (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24608,7 +24671,7 @@ GameObject:
   - component: {fileID: 2099302806}
   m_Layer: 0
   m_Name: bricks_brown_0 (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24695,7 +24758,7 @@ GameObject:
   - component: {fileID: 2101913159}
   m_Layer: 0
   m_Name: bricks_brown_0 (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24782,7 +24845,7 @@ GameObject:
   - component: {fileID: 2105792398}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24956,7 +25019,7 @@ GameObject:
   - component: {fileID: 2115990233}
   m_Layer: 0
   m_Name: bricks_brown_0 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25043,7 +25106,7 @@ GameObject:
   - component: {fileID: 2116422590}
   m_Layer: 0
   m_Name: bricks_brown_0 (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25130,7 +25193,7 @@ GameObject:
   - component: {fileID: 2121746286}
   m_Layer: 0
   m_Name: bricks_brown_0 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25217,7 +25280,7 @@ GameObject:
   - component: {fileID: 2126891381}
   m_Layer: 0
   m_Name: bricks_brown_0 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25304,7 +25367,7 @@ GameObject:
   - component: {fileID: 2133269968}
   m_Layer: 0
   m_Name: bricks_brown_0 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25391,7 +25454,7 @@ GameObject:
   - component: {fileID: 2138762240}
   m_Layer: 0
   m_Name: bricks_brown_0 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -34,8 +34,13 @@ public class RaceManager : MonoBehaviour
         {
             if (startPositions != null && i < startPositions.Length)
                 racers[i].transform.position = startPositions[i].position;
+
             racers[i].SetAsPlayer(i == playerIndex);
         }
+
+        // Tell camera to follow the chosen player
+        if (CameraFollow.Instance != null)
+            CameraFollow.Instance.SetTarget(racers[playerIndex].transform);
 
         StartCoroutine(CountdownRoutine());
     }
