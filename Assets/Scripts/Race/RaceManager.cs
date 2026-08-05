@@ -1,52 +1,39 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
-/// <summary>
-/// Manages the race itself — countdown, start, finish.
-/// BeginRace() is called by GameManager after character select.
-/// </summary>
 public class RaceManager : MonoBehaviour
 {
     public static RaceManager Instance { get; private set; }
 
-    [Header("All 4 racers — same order as GameManager: 0=Purple 1=Pink 2=Yellow 3=Green")]
+    [Header("All 4 racers — same order: 0=Purple 1=Pink 2=Yellow 3=Green")]
     public Racer[] racers;
 
     [Header("Starting positions for each racer")]
     public Transform[] startPositions;
 
     [Header("Countdown UI")]
-    public Text countdownText;
+    public TMP_Text countdownText;
 
     [Header("Countdown duration")]
     public float countdownTime = 3f;
 
     private bool raceFinished = false;
 
-    // ── Singleton ─────────────────────────────────────────────────────────────
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
     }
 
-    // ── Called by GameManager after player picks character ────────────────────
-
-    /// <summary>
-    /// playerIndex = which racer the human controls (0-3).
-    /// All others become AI.
-    /// </summary>
     public void BeginRace(int playerIndex)
     {
         raceFinished = false;
 
-        // Reset positions
         for (int i = 0; i < racers.Length; i++)
         {
             if (startPositions != null && i < startPositions.Length)
                 racers[i].transform.position = startPositions[i].position;
-
             racers[i].SetAsPlayer(i == playerIndex);
         }
 
@@ -57,12 +44,9 @@ public class RaceManager : MonoBehaviour
     {
         StopAllCoroutines();
         raceFinished = false;
-
         foreach (var r in racers)
             r.StopRacing();
     }
-
-    // ── Countdown ─────────────────────────────────────────────────────────────
 
     private IEnumerator CountdownRoutine()
     {
@@ -71,11 +55,9 @@ public class RaceManager : MonoBehaviour
             ShowText(i.ToString());
             yield return new WaitForSeconds(1f);
         }
-
         ShowText("GO!");
         yield return new WaitForSeconds(0.6f);
         HideText();
-
         foreach (var r in racers)
             r.StartRacing();
     }
@@ -93,18 +75,12 @@ public class RaceManager : MonoBehaviour
         countdownText.enabled = false;
     }
 
-    // ── Finish line calls this ────────────────────────────────────────────────
-
     public void OnRacerFinished(Racer winner)
     {
         if (raceFinished) return;
         raceFinished = true;
-
-        // Stop all racers
         foreach (var r in racers)
             r.StopRacing();
-
-        // Show results
         GameManager.Instance.ShowResults(winner.gameObject.name);
     }
 }
