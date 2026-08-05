@@ -7862,6 +7862,7 @@ GameObject:
   - component: {fileID: 637322358}
   - component: {fileID: 637322357}
   - component: {fileID: 637322359}
+  - component: {fileID: 637322360}
   m_Layer: 0
   m_Name: character_purple_idle_0
   m_TagString: Untagged
@@ -7961,6 +7962,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &637322360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637322356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  acceleration: 0.1
+  freezeDuration: 2
 --- !u!1 &638303748
 GameObject:
   m_ObjectHideFlags: 0
@@ -18693,6 +18709,7 @@ GameObject:
   - component: {fileID: 1672846495}
   - component: {fileID: 1672846494}
   - component: {fileID: 1672846496}
+  - component: {fileID: 1672846497}
   m_Layer: 0
   m_Name: character_green_idle_0
   m_TagString: Untagged
@@ -18792,6 +18809,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1672846497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672846493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  acceleration: 0.1
+  freezeDuration: 2
 --- !u!1 &1677608055
 GameObject:
   m_ObjectHideFlags: 0
@@ -21147,6 +21179,7 @@ GameObject:
   - component: {fileID: 1870379861}
   - component: {fileID: 1870379860}
   - component: {fileID: 1870379859}
+  - component: {fileID: 1870379862}
   m_Layer: 0
   m_Name: character_pink_idle_0
   m_TagString: Untagged
@@ -21246,6 +21279,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1870379862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870379858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  acceleration: 0.1
+  freezeDuration: 2
 --- !u!1 &1872757163
 GameObject:
   m_ObjectHideFlags: 0
@@ -22943,6 +22991,7 @@ GameObject:
   - component: {fileID: 2031447131}
   - component: {fileID: 2031447130}
   - component: {fileID: 2031447132}
+  - component: {fileID: 2031447133}
   m_Layer: 0
   m_Name: character_yellow_idle_0
   m_TagString: Untagged
@@ -23042,6 +23091,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2031447133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031447129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  acceleration: 0.1
+  freezeDuration: 2
 --- !u!1 &2044177126
 GameObject:
   m_ObjectHideFlags: 0

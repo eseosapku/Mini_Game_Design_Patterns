@@ -1,13 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Attach this to each character (purple, pink, yellow, green).
-/// Set a different Speed value on each one in the Inspector.
-///
-/// Requirements:
-///   - Animator component on the same GameObject
-///   - An Animation clip assigned in the Animator for "Running" state
-///   - The Animator must have a Bool parameter called "Running"
+/// Base racer class. Handles movement, animation, and freeze state.
+/// PlayerController and AIController override Act() and TakeHit().
 /// </summary>
 [RequireComponent(typeof(Animator))]
 public class Racer : MonoBehaviour
@@ -20,48 +15,101 @@ public class Racer : MonoBehaviour
     [Tooltip("How much speed increases per second as the race goes on")]
     public float acceleration = 0.1f;
 
-    // ── Internal state ─────────────────────────────────────────────────────
-    private Animator anim;
+    // Freeze state
+    [Header("Freeze")]
+    [SerializeField] private float freezeDuration = 2f;
+    private bool isFrozen = false;
+    private float freezeTimer = 0f;
+    public bool IsFrozen => isFrozen;
+
+    // Ground state (used by AIController / PlayerController for jumping later)
+    public bool IsGrounded { get; protected set; }
+
+    protected Animator Anim { get; private set; }
+
     private bool raceStarted = false;
     private bool finished = false;
 
-    // ── Animator parameter name — must match exactly what you set in Unity ──
     private static readonly int RunningParam = Animator.StringToHash("Running");
+    private static readonly int FrozenParam = Animator.StringToHash("Frozen");
 
-    // ─────────────────────────────────────────────────────────────────────────
-    private void Awake()
+    // -------------------------------------------------------------------------
+    protected virtual void Awake()
     {
-        anim = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();
     }
 
-    /// <summary>
-    /// Called by RaceManager when the countdown finishes.
-    /// </summary>
     public void StartRacing()
     {
         raceStarted = true;
-        anim.SetBool(RunningParam, true);
+        Anim.SetBool(RunningParam, true);
     }
 
-    /// <summary>
-    /// Called by FinishLine when this racer crosses.
-    /// </summary>
     public void StopRacing()
     {
         finished = true;
         raceStarted = false;
-        anim.SetBool(RunningParam, false);
+        Anim.SetBool(RunningParam, false);
     }
 
-    // ─────────────────────────────────────────────────────────────────────────
-    private void Update()
+    // -------------------------------------------------------------------------
+    protected virtual void Update()
     {
+        if (isFrozen)
+        {
+            freezeTimer -= Time.deltaTime;
+            if (freezeTimer <= 0f) Unfreeze();
+            return;
+        }
+
         if (!raceStarted || finished) return;
 
-        // Move right
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        // Subclasses can override Act() to add input / AI on top of movement
+        Act();
 
-        // Speed gradually increases over time
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
         speed += acceleration * Time.deltaTime;
+    }
+
+    /// <summary>
+    /// Override in PlayerController / AIController to add input or AI logic.
+    /// Base version does nothing extra — movement is handled in Update above.
+    /// </summary>
+    protected virtual void Act() { }
+
+    /// <summary>
+    /// Override in subclasses to add extra hit reactions.
+    /// Base version freezes the racer.
+    /// </summary>
+    public virtual void TakeHit()
+    {
+        Freeze();
+    }
+
+    // Freeze helpers
+    public void Freeze()
+    {
+        isFrozen = true;
+        freezeTimer = freezeDuration;
+        Anim.SetBool(FrozenParam, true);
+    }
+
+    private void Unfreeze()
+    {
+        isFrozen = false;
+        Anim.SetBool(FrozenParam, false);
+    }
+
+    // Movement helpers for subclasses to call later
+    protected void MoveForward()
+    {
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }
+
+    protected void TryJump()
+    {
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb != null && IsGrounded)
+            rb.AddForce(Vector2.up * 10f, ForceMode2D.Impulse);
     }
 }
