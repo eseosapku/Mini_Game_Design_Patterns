@@ -1,22 +1,15 @@
 using UnityEngine;
 
-namespace AstroRush.Player
+public class PlayerController : Racer
 {
-    public class PlayerController : Racer
+    protected override void Act()
     {
-        [Header("Key Bindings")]
-        [SerializeField] private KeyCode jumpKey = KeyCode.W;
-        [SerializeField] private KeyCode shootKey = KeyCode.Q;
+        // Input is already handled inside Racer.cs when isPlayer = true
+        // Add extra player-only logic here later
+    }
 
-        protected override void Act()
-        {
-            // Shooting and jumping will be wired up later
-            if (Input.GetKeyDown(jumpKey)) TryJump();
-        }
-
-        public override void TakeHit()
-        {
-            base.TakeHit();
-        }
+    public override void TakeHit()
+    {
+        base.TakeHit();
     }
 }
