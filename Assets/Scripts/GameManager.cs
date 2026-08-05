@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 /// <summary>
 /// Central controller. Manages which panel is visible and
@@ -19,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject resultsPanel;
 
     [Header("Results")]
-    public TMP_Text resultsText;
+    public Text resultsText;
 
     [Header("Characters in scene — same order: 0=Purple 1=Pink 2=Yellow 3=Green")]
     public GameObject[] characterObjects;
