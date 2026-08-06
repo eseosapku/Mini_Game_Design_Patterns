@@ -7,17 +7,17 @@ using UnityEngine.InputSystem;
 public class Racer : MonoBehaviour
 {
     [Header("Racing")]
-    public float baseSpeed = 4f;
+    public float baseSpeed = 5f;
     public float acceleration = 0.05f;
+    public float playerSpeed = 2.5f;
 
-    [Header("AI Speed Variance - makes race feel competitive")]
-    [Tooltip("How much the AI speed randomly varies")]
+    [Header("AI Speed Variance")]
     public float speedVariance = 0.8f;
-    [Tooltip("How often speed changes (seconds)")]
     public float varianceInterval = 1.5f;
 
     [Header("Jumping")]
-    public float jumpForce = 10f;
+    public float jumpForce = 14f;
+    public float fallMultiplier = 4f; // higher = snappier fall
     public Sprite jumpSprite;
     public Sprite runSprite;
 
@@ -54,37 +54,52 @@ public class Racer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
+
+        // Ignore collisions between all racers so they pass through each other
+        Racer[] allRacers = FindObjectsByType<Racer>(FindObjectsSortMode.None);
+        foreach (Racer other in allRacers)
+        {
+            if (other == this) continue;
+            Collider2D otherCol = other.GetComponent<Collider2D>();
+            if (otherCol != null && col != null)
+                Physics2D.IgnoreCollision(col, otherCol, true);
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!raceStarted || finished) return;
+        if (!raceStarted || finished || col == null) return;
 
-        // Ground check using box overlap just below character
-        if (col != null)
-        {
-            isGrounded = Physics2D.OverlapBox(
-                new Vector2(col.bounds.center.x, col.bounds.min.y - 0.05f),
-                new Vector2(col.bounds.size.x * 0.8f, 0.1f),
-                0f,
-                groundLayer);
-        }
+        // Ground check
+        isGrounded = Physics2D.OverlapBox(
+            new Vector2(col.bounds.center.x, col.bounds.min.y - 0.05f),
+            new Vector2(col.bounds.size.x * 0.8f, 0.1f),
+            0f, groundLayer);
+
+        // Snappy fall — apply extra gravity when falling
+        if (rb.linearVelocity.y < 0)
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y
+                               * (fallMultiplier - 1f) * Time.fixedDeltaTime;
     }
 
     public void SetAsPlayer(bool playerControlled)
     {
         isPlayer = playerControlled;
-        // Give AI a random starting variance so they don't all move identically
-        if (!playerControlled)
+        if (playerControlled)
+            currentSpeed = playerSpeed;
+        else
+        {
             currentVariance = Random.Range(-speedVariance, speedVariance);
-        Debug.Log(gameObject.name + " isPlayer = " + playerControlled);
+            currentSpeed = baseSpeed + currentVariance;
+        }
+        Debug.Log(gameObject.name + " isPlayer=" + playerControlled
+                  + " startSpeed=" + currentSpeed);
     }
 
     public void StartRacing()
     {
         raceStarted = true;
         finished = false;
-        currentSpeed = baseSpeed;
         anim.enabled = true;
         anim.SetBool(RunningParam, true);
     }
@@ -122,24 +137,22 @@ public class Racer : MonoBehaviour
         }
         wasGrounded = isGrounded;
 
-        // Accelerate over time
-        currentSpeed += acceleration * Time.deltaTime;
-
         if (isPlayer)
         {
             HandlePlayerInput();
+            currentSpeed += (acceleration * 0.3f) * Time.deltaTime;
             rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
         }
         else
         {
             HandleAI();
-            // Apply variance so AI racers jostle naturally
             varianceTimer -= Time.deltaTime;
             if (varianceTimer <= 0f)
             {
                 currentVariance = Random.Range(-speedVariance, speedVariance);
                 varianceTimer = varianceInterval;
             }
+            currentSpeed += acceleration * Time.deltaTime;
             rb.linearVelocity = new Vector2(
                 currentSpeed + currentVariance, rb.linearVelocity.y);
         }
@@ -147,32 +160,25 @@ public class Racer : MonoBehaviour
 
     private void Jump()
     {
+        // Reset Y velocity before jumping so double-jump doesn't stack
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        Debug.Log(gameObject.name + " JUMPED");
     }
 
     private void HandlePlayerInput()
     {
         var keyboard = Keyboard.current;
         if (keyboard == null) return;
-
         bool jumpPressed = keyboard.wKey.wasPressedThisFrame
                         || keyboard.upArrowKey.wasPressedThisFrame;
-
-        if (jumpPressed)
-        {
-            Debug.Log("Jump pressed. isGrounded = " + isGrounded);
-            if (isGrounded) Jump();
-        }
+        if (jumpPressed && isGrounded) Jump();
     }
 
     private void HandleAI()
     {
-        if (!isGrounded) return;
-
+        if (!isGrounded || col == null) return;
         RaycastHit2D hit = Physics2D.Raycast(
             col.bounds.center, Vector2.right, 1.5f);
-
         if (hit.collider != null && hit.collider.CompareTag("Obstacle"))
             Jump();
     }

@@ -2,22 +2,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
-/// <summary>
-/// Attach to each Racer character.
-/// Handles firing swap bullets and tracking shot count.
-/// Only the player character can actually fire.
-/// </summary>
 public class ShootingSystem : MonoBehaviour
 {
     [Header("Shooting")]
     public GameObject bulletPrefab;
-    public Transform  firePoint;
-    public int        startingShots = 5;
+    public int startingShots = 5;
 
-    [Header("HUD - assign the shot count text here")]
+    [Header("HUD")]
     public TMP_Text shotCountText;
 
-    private int  shotsLeft;
+    private int shotsLeft;
     private bool isPlayer = false;
     private Racer racer;
 
@@ -25,48 +19,40 @@ public class ShootingSystem : MonoBehaviour
 
     private void Awake()
     {
-        racer      = GetComponent<Racer>();
-        shotsLeft  = startingShots;
+        racer = GetComponent<Racer>();
+        shotsLeft = startingShots;
     }
 
-    private void Start()
-    {
-        UpdateHUD();
-    }
+    private void Start() => UpdateHUD();
 
-    /// <summary>
-    /// Called by RaceManager same time as Racer.SetAsPlayer()
-    /// </summary>
     public void SetAsPlayer(bool value)
     {
         isPlayer = value;
+        shotsLeft = startingShots; // reset shots each race
         UpdateHUD();
     }
 
     private void Update()
     {
-        if (!isPlayer) return;
-        if (shotsLeft <= 0) return;
+        if (!isPlayer || shotsLeft <= 0) return;
 
         var keyboard = Keyboard.current;
         if (keyboard == null) return;
 
-        if (keyboard.spaceKey.wasPressedThisFrame)
-            Fire();
+        if (keyboard.spaceKey.wasPressedThisFrame) Fire();
     }
 
     private void Fire()
     {
         if (bulletPrefab == null)
         {
-            Debug.LogWarning("No bullet prefab assigned on " + gameObject.name);
+            Debug.LogWarning("No bullet prefab on " + gameObject.name);
             return;
         }
 
-        // Spawn bullet at fire point (or character position if no fire point set)
-        Vector3 spawnPos = firePoint != null
-            ? firePoint.position
-            : transform.position + Vector3.right;
+        // Always spawn at character's current world position
+        // Offset slightly to the right so it doesn't immediately hit self
+        Vector3 spawnPos = transform.position + new Vector3(0.8f, 0f, 0f);
 
         GameObject b = Instantiate(bulletPrefab, spawnPos, Quaternion.identity);
         SwapBullet sb = b.GetComponent<SwapBullet>();

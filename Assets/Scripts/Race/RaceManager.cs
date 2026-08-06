@@ -6,7 +6,7 @@ public class RaceManager : MonoBehaviour
 {
     public static RaceManager Instance { get; private set; }
 
-    [Header("All 4 racers — same order: 0=Purple 1=Pink 2=Yellow 3=Green")]
+    [Header("All 4 racers — 0=Purple 1=Pink 2=Yellow 3=Green")]
     public Racer[] racers;
 
     [Header("Starting positions for each racer")]
@@ -20,10 +20,24 @@ public class RaceManager : MonoBehaviour
 
     private bool raceFinished = false;
 
+    // Store initial positions set in editor
+    private Vector3[] initialPositions;
+
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
+    }
+
+    private void Start()
+    {
+        // Cache starting positions on first load
+        initialPositions = new Vector3[racers.Length];
+        for (int i = 0; i < racers.Length; i++)
+        {
+            if (racers[i] != null)
+                initialPositions[i] = racers[i].transform.position;
+        }
     }
 
     public void BeginRace(int playerIndex)
@@ -32,18 +46,26 @@ public class RaceManager : MonoBehaviour
 
         for (int i = 0; i < racers.Length; i++)
         {
-            if (startPositions != null && i < startPositions.Length)
-                racers[i].transform.position = startPositions[i].position;
+            if (racers[i] == null) continue;
 
-            // Set player vs AI on Racer
+            // Reset to start position
+            if (startPositions != null && i < startPositions.Length && startPositions[i] != null)
+                racers[i].transform.position = startPositions[i].position;
+            else if (initialPositions != null && i < initialPositions.Length)
+                racers[i].transform.position = initialPositions[i];
+
+            // Reset rigidbody
+            Rigidbody2D rb = racers[i].GetComponent<Rigidbody2D>();
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+
             racers[i].SetAsPlayer(i == playerIndex);
 
-            // Also set on ShootingSystem if present
+            // Set shooting system
             ShootingSystem ss = racers[i].GetComponent<ShootingSystem>();
             if (ss != null) ss.SetAsPlayer(i == playerIndex);
         }
 
-        // Tell camera to follow chosen player
+        // Camera follows player
         if (CameraFollow.Instance != null)
             CameraFollow.Instance.SetTarget(racers[playerIndex].transform);
 
@@ -54,8 +76,23 @@ public class RaceManager : MonoBehaviour
     {
         StopAllCoroutines();
         raceFinished = false;
-        foreach (var r in racers)
-            r.StopRacing();
+
+        for (int i = 0; i < racers.Length; i++)
+        {
+            if (racers[i] == null) continue;
+
+            racers[i].StopRacing();
+
+            // Move back to start
+            if (startPositions != null && i < startPositions.Length && startPositions[i] != null)
+                racers[i].transform.position = startPositions[i].position;
+            else if (initialPositions != null && i < initialPositions.Length)
+                racers[i].transform.position = initialPositions[i];
+
+            // Stop rigidbody
+            Rigidbody2D rb = racers[i].GetComponent<Rigidbody2D>();
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+        }
     }
 
     private IEnumerator CountdownRoutine()
@@ -69,7 +106,7 @@ public class RaceManager : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         HideText();
         foreach (var r in racers)
-            r.StartRacing();
+            if (r != null) r.StartRacing();
     }
 
     private void ShowText(string msg)
@@ -90,7 +127,7 @@ public class RaceManager : MonoBehaviour
         if (raceFinished) return;
         raceFinished = true;
         foreach (var r in racers)
-            r.StopRacing();
+            if (r != null) r.StopRacing();
         GameManager.Instance.ShowResults(winner.gameObject.name);
     }
 }
