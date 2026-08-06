@@ -35,10 +35,15 @@ public class RaceManager : MonoBehaviour
             if (startPositions != null && i < startPositions.Length)
                 racers[i].transform.position = startPositions[i].position;
 
+            // Set player vs AI on Racer
             racers[i].SetAsPlayer(i == playerIndex);
+
+            // Also set on ShootingSystem if present
+            ShootingSystem ss = racers[i].GetComponent<ShootingSystem>();
+            if (ss != null) ss.SetAsPlayer(i == playerIndex);
         }
 
-        // Tell camera to follow the chosen player
+        // Tell camera to follow chosen player
         if (CameraFollow.Instance != null)
             CameraFollow.Instance.SetTarget(racers[playerIndex].transform);
 

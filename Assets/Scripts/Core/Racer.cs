@@ -7,15 +7,21 @@ using UnityEngine.InputSystem;
 public class Racer : MonoBehaviour
 {
     [Header("Racing")]
-    public float speed = 3f;
-    public float acceleration = 0.1f;
+    public float baseSpeed = 4f;
+    public float acceleration = 0.05f;
+
+    [Header("AI Speed Variance - makes race feel competitive")]
+    [Tooltip("How much the AI speed randomly varies")]
+    public float speedVariance = 0.8f;
+    [Tooltip("How often speed changes (seconds)")]
+    public float varianceInterval = 1.5f;
 
     [Header("Jumping")]
     public float jumpForce = 10f;
     public Sprite jumpSprite;
     public Sprite runSprite;
 
-    [Header("Ground Layer - set this to your Ground layer")]
+    [Header("Ground Layer")]
     public LayerMask groundLayer;
 
     [Header("Freeze")]
@@ -29,6 +35,10 @@ public class Racer : MonoBehaviour
     private bool finished = false;
     private bool wasGrounded = false;
     private bool isGrounded = false;
+
+    private float currentSpeed = 0f;
+    private float varianceTimer = 0f;
+    private float currentVariance = 0f;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -50,25 +60,23 @@ public class Racer : MonoBehaviour
     {
         if (!raceStarted || finished) return;
 
-        // Use the collider bounds to check just below the character
-        Vector2 origin = new Vector2(
-            col.bounds.center.x,
-            col.bounds.min.y - 0.05f);
-
-        // Box cast downward — only hits groundLayer
-        isGrounded = Physics2D.OverlapBox(
-            origin,
-            new Vector2(col.bounds.size.x * 0.8f, 0.1f),
-            0f,
-            groundLayer);
-
-        Debug.Log(gameObject.name + " grounded: " + isGrounded +
-                  " velY: " + rb.linearVelocity.y);
+        // Ground check using box overlap just below character
+        if (col != null)
+        {
+            isGrounded = Physics2D.OverlapBox(
+                new Vector2(col.bounds.center.x, col.bounds.min.y - 0.05f),
+                new Vector2(col.bounds.size.x * 0.8f, 0.1f),
+                0f,
+                groundLayer);
+        }
     }
 
     public void SetAsPlayer(bool playerControlled)
     {
         isPlayer = playerControlled;
+        // Give AI a random starting variance so they don't all move identically
+        if (!playerControlled)
+            currentVariance = Random.Range(-speedVariance, speedVariance);
         Debug.Log(gameObject.name + " isPlayer = " + playerControlled);
     }
 
@@ -76,6 +84,7 @@ public class Racer : MonoBehaviour
     {
         raceStarted = true;
         finished = false;
+        currentSpeed = baseSpeed;
         anim.enabled = true;
         anim.SetBool(RunningParam, true);
     }
@@ -111,16 +120,29 @@ public class Racer : MonoBehaviour
             anim.enabled = true;
             anim.SetBool(RunningParam, true);
         }
-
         wasGrounded = isGrounded;
 
-        if (isPlayer)
-            HandlePlayerInput();
-        else
-            HandleAI();
+        // Accelerate over time
+        currentSpeed += acceleration * Time.deltaTime;
 
-        rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
-        speed += acceleration * Time.deltaTime;
+        if (isPlayer)
+        {
+            HandlePlayerInput();
+            rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            HandleAI();
+            // Apply variance so AI racers jostle naturally
+            varianceTimer -= Time.deltaTime;
+            if (varianceTimer <= 0f)
+            {
+                currentVariance = Random.Range(-speedVariance, speedVariance);
+                varianceTimer = varianceInterval;
+            }
+            rb.linearVelocity = new Vector2(
+                currentSpeed + currentVariance, rb.linearVelocity.y);
+        }
     }
 
     private void Jump()
@@ -139,24 +161,20 @@ public class Racer : MonoBehaviour
 
         if (jumpPressed)
         {
-            Debug.Log("Jump key pressed. isGrounded = " + isGrounded);
+            Debug.Log("Jump pressed. isGrounded = " + isGrounded);
             if (isGrounded) Jump();
         }
     }
 
     private void HandleAI()
     {
-        RaycastHit2D hit = Physics2D.Raycast(
-            col.bounds.center,
-            Vector2.right,
-            1.5f);
+        if (!isGrounded) return;
 
-        if (hit.collider != null &&
-            hit.collider.CompareTag("Obstacle") &&
-            isGrounded)
-        {
+        RaycastHit2D hit = Physics2D.Raycast(
+            col.bounds.center, Vector2.right, 1.5f);
+
+        if (hit.collider != null && hit.collider.CompareTag("Obstacle"))
             Jump();
-        }
     }
 
     public void Freeze()
