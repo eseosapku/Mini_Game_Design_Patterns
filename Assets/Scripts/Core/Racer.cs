@@ -11,17 +11,12 @@ public class Racer : MonoBehaviour
     public float acceleration = 0.1f;
 
     [Header("Jumping")]
-    public float jumpForce = 8f;
-    [Tooltip("Drag the jump sprite for this character here")]
+    public float jumpForce = 10f;
     public Sprite jumpSprite;
-    [Tooltip("Drag the first run sprite for this character here")]
     public Sprite runSprite;
 
-    [Header("Ground Check")]
-    public Transform groundCheck;
+    [Header("Ground Layer - set this to your Ground layer")]
     public LayerMask groundLayer;
-    private bool isGrounded;
-    private bool wasGrounded;
 
     [Header("Freeze")]
     [SerializeField] private float freezeDuration = 2f;
@@ -32,10 +27,13 @@ public class Racer : MonoBehaviour
     private bool isPlayer = false;
     private bool raceStarted = false;
     private bool finished = false;
+    private bool wasGrounded = false;
+    private bool isGrounded = false;
 
     private Animator anim;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Collider2D col;
 
     private static readonly int RunningParam = Animator.StringToHash("Running");
     private static readonly int FrozenParam = Animator.StringToHash("Frozen");
@@ -45,6 +43,27 @@ public class Racer : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (!raceStarted || finished) return;
+
+        // Use the collider bounds to check just below the character
+        Vector2 origin = new Vector2(
+            col.bounds.center.x,
+            col.bounds.min.y - 0.05f);
+
+        // Box cast downward — only hits groundLayer
+        isGrounded = Physics2D.OverlapBox(
+            origin,
+            new Vector2(col.bounds.size.x * 0.8f, 0.1f),
+            0f,
+            groundLayer);
+
+        Debug.Log(gameObject.name + " grounded: " + isGrounded +
+                  " velY: " + rb.linearVelocity.y);
     }
 
     public void SetAsPlayer(bool playerControlled)
@@ -57,6 +76,7 @@ public class Racer : MonoBehaviour
     {
         raceStarted = true;
         finished = false;
+        anim.enabled = true;
         anim.SetBool(RunningParam, true);
     }
 
@@ -80,21 +100,14 @@ public class Racer : MonoBehaviour
             return;
         }
 
-        // Ground check
-        if (groundCheck != null)
-            isGrounded = Physics2D.OverlapCircle(
-                groundCheck.position, 0.1f, groundLayer);
-
-        // Swap sprite based on grounded state
+        // Sprite swap for jump
         if (!isGrounded && jumpSprite != null)
         {
-            // In the air — show jump sprite, pause run animation
             anim.enabled = false;
             sr.sprite = jumpSprite;
         }
         else if (isGrounded && !wasGrounded)
         {
-            // Just landed — restore run animation
             anim.enabled = true;
             anim.SetBool(RunningParam, true);
         }
@@ -106,7 +119,6 @@ public class Racer : MonoBehaviour
         else
             HandleAI();
 
-        // All racers move forward
         rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
         speed += acceleration * Time.deltaTime;
     }
@@ -114,6 +126,7 @@ public class Racer : MonoBehaviour
     private void Jump()
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        Debug.Log(gameObject.name + " JUMPED");
     }
 
     private void HandlePlayerInput()
@@ -124,15 +137,19 @@ public class Racer : MonoBehaviour
         bool jumpPressed = keyboard.wKey.wasPressedThisFrame
                         || keyboard.upArrowKey.wasPressedThisFrame;
 
-        if (jumpPressed && isGrounded)
-            Jump();
+        if (jumpPressed)
+        {
+            Debug.Log("Jump key pressed. isGrounded = " + isGrounded);
+            if (isGrounded) Jump();
+        }
     }
 
     private void HandleAI()
     {
         RaycastHit2D hit = Physics2D.Raycast(
-            new Vector2(transform.position.x, transform.position.y - 0.1f),
-            Vector2.right, 1.5f);
+            col.bounds.center,
+            Vector2.right,
+            1.5f);
 
         if (hit.collider != null &&
             hit.collider.CompareTag("Obstacle") &&
@@ -164,5 +181,4 @@ public class Racer : MonoBehaviour
     protected void StopHorizontal() { }
     protected void TryJump() { if (isGrounded) Jump(); }
     protected Animator Anim => anim;
-    public bool IsGrounded => isGrounded;
 }
