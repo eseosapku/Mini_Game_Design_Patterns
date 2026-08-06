@@ -3781,7 +3781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ULTIMATE SKY BATTLE
+  m_text: Astro Rush
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9839,12 +9839,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 5
+  baseSpeed: 1
   acceleration: 0.5
   playerSpeed: 2.5
   speedVariance: 0.6
   varianceInterval: 1.5
   jumpForce: 10
+  fallMultiplier: 4
   jumpSprite: {fileID: -1044756669, guid: 57fba61a1cf7bc541ab388ee58703f8f, type: 3}
   runSprite: {fileID: 0}
   groundLayer:
@@ -9928,7 +9929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3242169567117027851, guid: 561c6cd5a56e08e49be810ed767ce3e1, type: 3}
-  firePoint: {fileID: 1157154062}
   startingShots: 5
   shotCountText: {fileID: 313486687}
 --- !u!1 &638303748
@@ -13170,7 +13170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16688,7 +16688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20602,7 +20602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Resume
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24099,12 +24099,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 5
+  baseSpeed: 1
   acceleration: 0.5
   playerSpeed: 2.5
   speedVariance: 0
   varianceInterval: 1.5
   jumpForce: 10
+  fallMultiplier: 4
   jumpSprite: {fileID: 81588383, guid: 9012c1f62c720f34f8207c12a00c47a7, type: 3}
   runSprite: {fileID: 0}
   groundLayer:
@@ -24188,7 +24189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3242169567117027851, guid: 561c6cd5a56e08e49be810ed767ce3e1, type: 3}
-  firePoint: {fileID: 1157154062}
   startingShots: 5
   shotCountText: {fileID: 313486687}
 --- !u!1 &1677608055
@@ -27361,12 +27361,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 5
+  baseSpeed: 1
   acceleration: 0.5
   playerSpeed: 2.5
   speedVariance: 1
   varianceInterval: 1.5
   jumpForce: 10
+  fallMultiplier: 4
   jumpSprite: {fileID: 2016285022, guid: 1fc5177005f2c2f46885f9d3eed7662a, type: 3}
   runSprite: {fileID: 0}
   groundLayer:
@@ -27450,7 +27451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3242169567117027851, guid: 561c6cd5a56e08e49be810ed767ce3e1, type: 3}
-  firePoint: {fileID: 1157154062}
   startingShots: 5
   shotCountText: {fileID: 313486687}
 --- !u!1 &1872757163
@@ -27589,7 +27589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30030,12 +30030,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29982ca701393594f9715003445d06c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 5
+  baseSpeed: 1
   acceleration: 0.5
   playerSpeed: 2.5
   speedVariance: 0.5
   varianceInterval: 1.5
   jumpForce: 10
+  fallMultiplier: 4
   jumpSprite: {fileID: 28112297, guid: 17b6fdac5c8ca8a4ab6dfe6ef31636e5, type: 3}
   runSprite: {fileID: 0}
   groundLayer:
@@ -30119,7 +30120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3242169567117027851, guid: 561c6cd5a56e08e49be810ed767ce3e1, type: 3}
-  firePoint: {fileID: 1157154062}
   startingShots: 5
   shotCountText: {fileID: 313486687}
 --- !u!1 &2044177126
